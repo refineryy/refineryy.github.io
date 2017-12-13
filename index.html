@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>REFINERYY</title>
+	<meta name="author" content="keksimus">
+	<meta name="description" content="REFINERYY">
+	<meta name="keywords" content="Ethereum, Quorum, Blockchain, Decentralisation, Real Estate, Asset Securitisation, Tokenisation">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<link href="css/css.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+	<link href="css/black-tie.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="css/bootstrap-custom.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/ser.css">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/favicon.ico">
+
+    <script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['start', 'contact'],
+				recordHistory: true,
+                scrollingSpeed: 1000,
+				slidesNavigation: true,
+				loopHorizontal: false,
+				afterLoad: function (anchorLink, index) {
+					//section 2 loaded
+					if (index == 2) {
+						//adding active class to the 1st element in the slide menu
+						$('#menu').find('li').eq(0).addClass('active');
+						$('#menu').find('li').eq(1).removeClass('active');
+					}
+					if (index == 3) {
+						//adding active class to the 1st element in the slide menu
+						$('#menu').find('li').eq(1).addClass('active');
+						$('#menu').find('li').eq(0).removeClass('active');
+
+					}
+				}
+			});
+		});
+
+
+	</script>
+</head>
+<body>
+
+<div class="borders"></div>
+<div id="particles-js"></div>
+
+<div class="header">
+</div>
+
+<div id="fullpage">
+
+	<!-- About -->
+	<div class="section" id="section0">
+		<div class="content">
+		  <div class="content-inner">
+			<div class="quote">
+			  <div class="title"><img src="images/ryy_logo"></div>
+			  REFINERYY
+			  <div class="sub"><span>Website Coming Soon</span></div>
+			</div>
+			<div data-menuanchor="contact" class="more"><a href="#contact" class="btr bt-arrow-down"></a></div>
+		  </div>
+		</div>
+	</div>
+	<div class="section" id="section1">
+		<div class="content">
+		  <div class="content-inner">
+			  <div class="text">
+           <b>We'd love to hear from you!</b><br>
+				  Please reach out at info@refineryy.io
+			  </div>
+		  </div>
+		</div>
+	</div>
+
+
+</div>
+<!-- Modal -->
+	<script src="js/particles.min.js"></script>
+	<script src="js/app.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/ser.js"></script>
+
+
+</body>
+</html>
