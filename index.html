@@ -28,29 +28,47 @@
 	<![endif]-->
 
 	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				anchors: ['start', 'contact'],
-				recordHistory: true,
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                anchors: ['home', 'collab', 'offering','contact'],
+                recordHistory: true,
                 scrollingSpeed: 1000,
-				slidesNavigation: true,
-				loopHorizontal: false,
-				afterLoad: function (anchorLink, index) {
-					//section 2 loaded
-					if (index == 2) {
-						//adding active class to the 1st element in the slide menu
-						$('#menu').find('li').eq(0).addClass('active');
-						$('#menu').find('li').eq(1).removeClass('active');
-					}
-					if (index == 3) {
-						//adding active class to the 1st element in the slide menu
-						$('#menu').find('li').eq(1).addClass('active');
-						$('#menu').find('li').eq(0).removeClass('active');
+                slidesNavigation: true,
+                loopHorizontal: false,
+                afterLoad: function (anchorLink, index) {
+                    //section 2 loaded
+                    if (index == 1) {
+                        //adding active class to the 1st element in the slide menu
+                        $('#menu').find('li').eq(0).addClass('active');
+                        $('#menu').find('li').eq(1).removeClass('active');
+                        $('#menu').find('li').eq(2).removeClass('active');
+                        $('#menu').find('li').eq(3).removeClass('active');
+                    }
+                    if (index == 2) {
+                        //adding active class to the 1st element in the slide menu
+                        $('#menu').find('li').eq(1).addClass('active');
+                        $('#menu').find('li').eq(0).removeClass('active');
+                        $('#menu').find('li').eq(2).removeClass('active');
+                        $('#menu').find('li').eq(3).removeClass('active');
+                    }
+                    if (index == 3) {
+                        //adding active class to the 1st element in the slide menu
+                        $('#menu').find('li').eq(2).addClass('active');
+                        $('#menu').find('li').eq(1).removeClass('active');
+                        $('#menu').find('li').eq(0).removeClass('active');
+                        $('#menu').find('li').eq(3).removeClass('active');
+                    }
+                    if (index == 4) {
+                        //adding active class to the 1st element in the slide menu
+                        $('#menu').find('li').eq(3).addClass('active');
+                        $('#menu').find('li').eq(2).removeClass('active');
+                        $('#menu').find('li').eq(1).removeClass('active');
+                        $('#menu').find('li').eq(0).removeClass('active');
+                    }
+                }
+            });
+        });
 
-					}
-				}
-			});
-		});
 
 
 	</script>
@@ -61,31 +79,92 @@
 <div id="particles-js"></div>
 
 <div class="header">
+	<div id="toggle">
+		<div class="one"></div>
+		<div class="three"></div>
+		<div class="two"></div>
+
+	</div>
+	<div id="menu">
+		<ul>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#collab">Collaboration</a></li>
+			<li><a href="#offering">Rethinking DCM</a></li>
+			<li><a href="#contact">Get In Touch</a></li>
+		</ul>
+	</div>
 </div>
+
 
 <div id="fullpage">
 
-	<!-- About -->
+	<!-- Home -->
 	<div class="section" id="section0">
 		<div class="content">
 		  <div class="content-inner">
 			<div class="quote">
-			  <div class="title"><img src="images/ryy_logo"></div>
+			  <div class="title"><img src="images/ryy_logo.png"></div>
 			  REFINERYY
-			  <div class="sub"><span>Website Coming Soon</span></div>
+			  <div class="sub" style="colour:#f6f6f6;"><span>BETTER TECH FOR RE/CRE DEBT CAPITAL MARKETS</span></div>
 			</div>
 			<div data-menuanchor="contact" class="more"><a href="#contact" class="btr bt-arrow-down"></a></div>
 		  </div>
 		</div>
 	</div>
+
+
+
+	<!-- Collaboration -->
+	<div class="section" id="section1">
+		<div class="slide">
+			<div class="content work">
+				<div class="content-inner">
+					<div class="project-wrap">
+						<div class="text" style="colour: white; font-size: 30px"><span>IN COLLABORATION WITH</span></div>
+						<br>
+						<br>
+						<br>
+						<div class="text">
+							<img src="images/collab.png" alt="Collaborators" style="width: 100%;height: auto;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<!-- Offering -->
+	<div class="section" id="section1">
+		<div class="slide">
+			<div class="content work">
+				<div class="content-inner">
+					<div class="project-wrap">
+						<div class="text" style="colour: white; font-size: 30px"><span>RETHINKING DCM</span></div>
+						<div class="text">
+							<img src="images/offering.png" alt="DCM" style="width: 70%;  height: auto;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- Contact -->
 	<div class="section" id="section1">
 		<div class="content">
-		  <div class="content-inner">
-			  <div class="text">
-           <b>We'd love to hear from you!</b><br>
-				  Please reach out at info@refineryy.io
-			  </div>
-		  </div>
+			<div class="content-inner">
+				<div class="text" style="color: rgba(255,255,255,0.85)">
+					<b>We'd love to hear from you!</b>
+				</div>
+				<div class="text" style="color: rgba(255,255,255,0.85)">
+					<h2>info@refineryy.io</h2>
+				</div>
+			</div>
 		</div>
 	</div>
 
