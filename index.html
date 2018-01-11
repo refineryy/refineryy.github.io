@@ -69,8 +69,16 @@
             });
         });
 
+	</script>
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112337286-1"></script>
+	<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', 'UA-112337286-1');
 	</script>
 </head>
 <body>
@@ -125,13 +133,16 @@
 						<br>
 						<br>
 						<div class="text">
-							<img src="images/collab.png" alt="Collaborators" style="width: 100%;height: auto;">
+							<img src="images/collab.png" alt="Collaborators" style="width: 100%;height: auto;" usemap="#collabmap">
+							<map name="collabmap" id="collabmap">
+								<area alt="Consensys" title="Consensys" href="https://consensys.net/" shape="rect" coords="5,4,229,166" />
+								<area alt="UCLCBT" title="UCLCBT" href="http://blockchain.cs.ucl.ac.uk/" shape="rect" coords="267,10,426,170" />
+							</map>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
 	</div>
 
 
@@ -144,13 +155,12 @@
 					<div class="project-wrap">
 						<div class="text" style="colour: white; font-size: 30px"><span>RETHINKING DCM</span></div>
 						<div class="text">
-							<img src="images/offering.png" alt="DCM" style="width: 70%;  height: auto;">
+							<img src="images/offering.png" alt="DCM" style="width: 70%;  height: auto;" >
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
 	</div>
 
 
